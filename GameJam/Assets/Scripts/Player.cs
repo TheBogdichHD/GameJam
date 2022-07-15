@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || goLeft)
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || goLeft) && !goDown && !goRight && !goUp)
         {
             goLeft = true;
             currentDistance += movementDistance;
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || goRight)
+        else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || goRight) && !goDown && !goLeft && !goUp)
         {
             goRight = true;
             currentDistance += movementDistance;
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || goUp)
+        else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || goUp) && !goDown && !goRight && !goLeft)
         {
             goUp = true;
             currentDistance += movementDistance;
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || goDown)
+        else if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || goDown) && !goLeft && !goRight && !goUp)
         {
             goDown = true;
             currentDistance += movementDistance;
