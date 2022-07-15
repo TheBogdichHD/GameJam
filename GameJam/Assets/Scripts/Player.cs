@@ -7,24 +7,74 @@ public class Player : MonoBehaviour
     protected BoxCollider2D boxCollider;
     protected RaycastHit2D hit;
     private SpriteRenderer spriteRenderer;
-    private float movementDistance = 0.32f;
+    private float movementDistance = 0.02f;
+    private float maxDistance = 0.32f;
+    private float currentDistance;
+    private bool goLeft;
+    private bool goRight;
+    private bool goUp;
+    private bool goDown;
 
     protected void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        currentDistance = 0;
+        goLeft = false;
+        goRight = false;
+        goUp = false;
+        goDown = false;
     }
     
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || goLeft)
+        {
+            goLeft = true;
+            currentDistance += movementDistance;
             transform.position += new Vector3(-movementDistance, 0, 0);
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if (currentDistance >= maxDistance)
+            {
+                currentDistance = 0;
+                goLeft = false;
+            }
+        }
+
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || goRight)
+        {
+            goRight = true;
+            currentDistance += movementDistance;
             transform.position += new Vector3(movementDistance, 0, 0);
-        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if (currentDistance >= maxDistance)
+            {
+                currentDistance = 0;
+                goRight = false;
+            }
+        }
+
+        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || goUp)
+        {
+            goUp = true;
+            currentDistance += movementDistance;
             transform.position += new Vector3(0, movementDistance, 0);
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            if (currentDistance >= maxDistance)
+            {
+                currentDistance = 0;
+                goUp = false;
+            }
+        }
+
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || goDown)
+        {
+            goDown = true;
+            currentDistance += movementDistance;
             transform.position += new Vector3(0, -movementDistance, 0);
-        
+            if (currentDistance >= maxDistance)
+            {
+                currentDistance = 0;
+                goDown = false;
+            }
+        }
+        //transform.position += new Vector3(-movementDistance, 0, 0);
     }
 }
