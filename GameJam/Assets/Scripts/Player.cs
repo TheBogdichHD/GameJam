@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public bool goRight;
     public bool goUp;
     public bool goDown;
+    public bool isSliding;
 
     public ParticleSystem dust;
     //                          5
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
         spriteRenderer.sprite = cube[1];
         cubeInt = new int[] { 2, 1, 5, 6, 4, 3 };
         currentInt = 1;
+        isSliding = false;
         SetEdges();
     }
     
@@ -50,11 +52,14 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                goLeft = false;
-                currentInt = cubeInt[2];
-                spriteRenderer.sprite = cube[2];
-                cube = new Sprite[] { cube[1], cube[2], cube[3], cube[0], cube[4], cube[5] };
-                SetEdges();
+                if (!isSliding)
+                {
+                    goLeft = false;
+                    currentInt = cubeInt[2];
+                    spriteRenderer.sprite = cube[2];
+                    cube = new Sprite[] { cube[1], cube[2], cube[3], cube[0], cube[4], cube[5] };
+                    SetEdges();
+                }
             }
         }
 
@@ -67,11 +72,14 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                goRight = false;
-                currentInt = cubeInt[0];
-                spriteRenderer.sprite = cube[0];
-                cube = new Sprite[] { cube[3], cube[0], cube[1], cube[2], cube[4], cube[5] };
-                SetEdges();
+                if (!isSliding)
+                {
+                    goRight = false;
+                    currentInt = cubeInt[0];
+                    spriteRenderer.sprite = cube[0];
+                    cube = new Sprite[] { cube[3], cube[0], cube[1], cube[2], cube[4], cube[5] };
+                    SetEdges();
+                }
             }
         }
 
@@ -84,11 +92,14 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                goUp = false;
-                currentInt = cubeInt[4];
-                spriteRenderer.sprite = cube[4];
-                cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
-                SetEdges();
+                if (!isSliding)
+                {
+                    goUp = false;
+                    currentInt = cubeInt[4];
+                    spriteRenderer.sprite = cube[4];
+                    cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
+                    SetEdges();
+                }
             }
         }
 
@@ -101,11 +112,14 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                goDown = false;
-                currentInt = cubeInt[5];
-                spriteRenderer.sprite = cube[5];
-                cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
-                SetEdges();
+                if (!isSliding)
+                {
+                    goDown = false;
+                    currentInt = cubeInt[5];
+                    spriteRenderer.sprite = cube[5];
+                    cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
+                    SetEdges();
+                }
             }
         }
 
