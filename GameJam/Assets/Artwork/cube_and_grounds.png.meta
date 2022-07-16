@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -368,7 +368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_
+      name: Dice_1
       rect:
         serializedVersion: 2
         x: 0
@@ -376,7 +376,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_1
+      name: Dice_2
       rect:
         serializedVersion: 2
         x: 32
@@ -397,7 +397,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pave_
+      name: Pave_Horizontal
       rect:
         serializedVersion: 2
         x: 0
@@ -418,7 +418,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,7 +431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fence_0
+      name: Fence_Round
       rect:
         serializedVersion: 2
         x: 0
@@ -439,7 +439,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_1
+      name: Enemy_1
       rect:
         serializedVersion: 2
         x: 0
@@ -460,7 +460,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,7 +473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: path_0
+      name: Area_Bottom
       rect:
         serializedVersion: 2
         x: 0
@@ -481,7 +481,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mud_0
+      name: Mud_Right_Up
       rect:
         serializedVersion: 2
         x: 160
@@ -502,7 +502,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -515,7 +515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_0
+      name: Dice_3
       rect:
         serializedVersion: 2
         x: 64
@@ -523,7 +523,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,7 +536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_2
+      name: Dice_4
       rect:
         serializedVersion: 2
         x: 96
@@ -544,7 +544,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -557,7 +557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_3
+      name: Dice_5
       rect:
         serializedVersion: 2
         x: 128
@@ -565,7 +565,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,7 +578,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_4
+      name: Dice_6
       rect:
         serializedVersion: 2
         x: 160
@@ -586,7 +586,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -599,7 +599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_5
+      name: Pave_Right_Up
       rect:
         serializedVersion: 2
         x: 32
@@ -607,7 +607,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -620,7 +620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_6
+      name: Pave_Left_Up
       rect:
         serializedVersion: 2
         x: 64
@@ -628,7 +628,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -641,7 +641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_7
+      name: Pave_Left_Down
       rect:
         serializedVersion: 2
         x: 96
@@ -649,7 +649,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_8
+      name: Pave_Right_Down
       rect:
         serializedVersion: 2
         x: 128
@@ -670,7 +670,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -683,7 +683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_9
+      name: Pave_Vertical
       rect:
         serializedVersion: 2
         x: 160
@@ -691,7 +691,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_10
+      name: Fence_Round_Right
       rect:
         serializedVersion: 2
         x: 32
@@ -712,7 +712,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -725,7 +725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_11
+      name: Fence_Round_Left
       rect:
         serializedVersion: 2
         x: 64
@@ -733,7 +733,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -746,7 +746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_12
+      name: Fence_Horizontal
       rect:
         serializedVersion: 2
         x: 96
@@ -754,7 +754,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -767,7 +767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_13
+      name: Ice_Horizontal
       rect:
         serializedVersion: 2
         x: 128
@@ -775,7 +775,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -788,7 +788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_14
+      name: Ice_Vertical
       rect:
         serializedVersion: 2
         x: 160
@@ -796,7 +796,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -809,7 +809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_15
+      name: Fence_Round_Up
       rect:
         serializedVersion: 2
         x: 0
@@ -817,7 +817,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -830,7 +830,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_16
+      name: Fence_Vertical
       rect:
         serializedVersion: 2
         x: 32
@@ -838,7 +838,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -851,7 +851,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_17
+      name: Fence_Round_Down
       rect:
         serializedVersion: 2
         x: 64
@@ -859,7 +859,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -872,7 +872,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_18
+      name: Fence_Round_Right&Up
       rect:
         serializedVersion: 2
         x: 96
@@ -880,7 +880,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -893,7 +893,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_19
+      name: Fence_Round_Left&Up
       rect:
         serializedVersion: 2
         x: 128
@@ -901,7 +901,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -914,7 +914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_20
+      name: Fence_Round_Left&Down
       rect:
         serializedVersion: 2
         x: 160
@@ -922,7 +922,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -935,7 +935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_21
+      name: Fence_Round_Lef&Down
       rect:
         serializedVersion: 2
         x: 0
@@ -943,7 +943,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -956,7 +956,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_22
+      name: Area
       rect:
         serializedVersion: 2
         x: 32
@@ -964,7 +964,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -977,7 +977,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_23
+      name: Area_Top_Exit
       rect:
         serializedVersion: 2
         x: 64
@@ -985,7 +985,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -998,7 +998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_24
+      name: Area_Left_Exit
       rect:
         serializedVersion: 2
         x: 96
@@ -1006,7 +1006,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1019,7 +1019,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_25
+      name: Area_Bottom_Exit
       rect:
         serializedVersion: 2
         x: 128
@@ -1027,7 +1027,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,7 +1040,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_26
+      name: Area_Right_Exit
       rect:
         serializedVersion: 2
         x: 160
@@ -1048,7 +1048,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1061,7 +1061,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_27
+      name: Enemy_2
       rect:
         serializedVersion: 2
         x: 32
@@ -1069,7 +1069,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,7 +1082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_28
+      name: Enemy_3
       rect:
         serializedVersion: 2
         x: 64
@@ -1090,7 +1090,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1103,7 +1103,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_29
+      name: Enemy_4
       rect:
         serializedVersion: 2
         x: 96
@@ -1111,7 +1111,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,7 +1124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_30
+      name: Enemy_5
       rect:
         serializedVersion: 2
         x: 128
@@ -1132,7 +1132,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1145,7 +1145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_31
+      name: Enemy_6
       rect:
         serializedVersion: 2
         x: 160
@@ -1153,7 +1153,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1166,7 +1166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_32
+      name: Area_Top
       rect:
         serializedVersion: 2
         x: 32
@@ -1174,7 +1174,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1187,7 +1187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_33
+      name: Area_Right
       rect:
         serializedVersion: 2
         x: 64
@@ -1195,7 +1195,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1216,7 +1216,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1229,7 +1229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_35
+      name: Area_Left
       rect:
         serializedVersion: 2
         x: 128
@@ -1237,7 +1237,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1250,7 +1250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_36
+      name: Area_Round_Up
       rect:
         serializedVersion: 2
         x: 0
@@ -1258,7 +1258,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1271,7 +1271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_37
+      name: Area_Round_Right
       rect:
         serializedVersion: 2
         x: 32
@@ -1279,7 +1279,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,7 +1292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_38
+      name: Area_Round_Down
       rect:
         serializedVersion: 2
         x: 64
@@ -1300,7 +1300,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1313,7 +1313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_39
+      name: Area_Round_Left
       rect:
         serializedVersion: 2
         x: 96
@@ -1321,7 +1321,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1334,7 +1334,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_40
+      name: Mud_Left_Up
       rect:
         serializedVersion: 2
         x: 128
@@ -1342,7 +1342,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1355,7 +1355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_41
+      name: Mud_Left_Down
       rect:
         serializedVersion: 2
         x: 160
@@ -1363,7 +1363,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1376,7 +1376,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_42
+      name: Mud_Right_Down
       rect:
         serializedVersion: 2
         x: 160
@@ -1384,7 +1384,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1407,100 +1407,100 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cube_and_grounds_5: 2008135622
+      Area_Top: -177061707
+      Fence_Vertical: 1073279899
+      Dice_3: 2035050480
       mud_3: 1552760836
-      cube_and_grounds_35: 243811301
-      cube_and_grounds_3: 22025154
-      cube_and_grounds_40: 838485847
-      mud_0: -641867480
+      Enemy_6: 1615131821
+      Mud_Left_Up: 838485847
+      Fence_Round_Left&Down: -1640676066
       path_3: -1341293588
-      cube_and_grounds_38: 36228861
+      Pave_Right_Down: -528624617
       evil_cube_3: -820312771
       fence_9: -1941466957
-      cube_and_grounds_30: -1763390529
+      Pave_Vertical: -1196127753
+      Pave_Left_Down: -2045614716
+      Dice_4: 1157403554
       icey_pave_1: 1402774135
-      cube_and_grounds_20: -1640676066
       path_2: 922895035
-      cube_and_grounds_12: 1938462299
-      cube_and_grounds_32: -177061707
-      enemy_1: 556918822
+      Area_Round_Left: -1765918735
+      Dice_1: -70242328
       pave_0: 1628754583
       fence_6: -123565808
-      cube_and_grounds_26: -2094861739
+      Area_Left_Exit: -1475321440
       evil_cube_1: -15948843
+      Fence_Horizontal: 1938462299
       fence_8: -206316193
-      cube_and_grounds_7: -2045614716
+      Enemy_4: -924398572
+      Fence_Round_Left: 895408574
+      Area_Round_Up: -1923780293
       path_5: -1905104882
-      cube_and_grounds_39: -1765918735
+      Enemy_2: -1332795381
       evil_cube_5: -660993591
-      cube_and_grounds_24: -1475321440
       cube_and_grounds_34: 992565537
-      cube_and_grounds_15: 385948529
-      evil_cube_2: 767184579
+      Mud_Right_Down: 583051598
+      Area_Top_Exit: -284278880
       cube_3: -1790877688
+      evil_cube_2: 767184579
       fence_2: 45268218
-      cube_and_grounds_6: -1781622133
-      cube_and_grounds_4: -1381811912
+      Dice_5: 22025154
+      Enemy_1: 556918822
+      Enemy_5: -1763390529
       mud_1: -1646461127
-      cube_and_grounds_17: 1776982866
-      cube_and_grounds_11: 895408574
       cube_6: -1727351114
       path_11: -958023450
+      Area_Right_Exit: -2094861739
       cube_1: -1934050130
       pave_2: -316866886
       fence_5: 852846331
+      Area_Round_Down: 36228861
+      Area_Bottom_Exit: 452893854
       path_9: 1458242648
-      cube_and_grounds_16: 1073279899
       path_7: 2077084812
       evil_cube_6: 1469862399
       path_10: -237076679
-      cube_and_grounds_10: -1623799010
-      cube_and_grounds_41: -2064919525
+      Area_Right: 128935680
+      Dice_2: 1487560300
       fence_1: -992741833
-      cube_and_grounds_2: 1157403554
+      Area_Round_Right: 772907429
       path_8: -1257667079
       icey_pave_0: -1885621991
       fence_4: 1632236277
       fence_7: -117327238
+      Dice_6: -1381811912
       path_4: -1005033415
       pave_3: -1662108920
-      cube_and_grounds_29: -924398572
-      cube_and_grounds_36: -1923780293
-      cube_and_grounds_23: -284278880
-      cube_and_grounds_27: -1332795381
-      cube_and_grounds_25: 452893854
-      path_0: -1935503498
-      cube_and_grounds_1: 1487560300
+      Fence_Round_Lef&Down: -1298604330
+      Ice_Vertical: 1832837669
+      Pave_Left_Up: -1781622133
       path_1: 1207338379
-      cube_and_grounds_14: 1832837669
-      fence_0: -215813494
+      Fence_Round_Down: 1776982866
+      Ice_Horizontal: -729772798
       path_12: -698279594
-      cube_and_grounds_21: -1298604330
-      cube_and_grounds_28: 768777580
-      cube_and_grounds_33: 128935680
+      Fence_Round_Left&Up: -1946786275
+      Fence_Round_Up: 385948529
+      Fence_Round_Right: -1623799010
       cube_4: -383790610
       mud_2: 1943238345
       fence_3: -1769361441
-      cube_and_grounds_22: 545281615
+      Area_Left: 243811301
       evil_cube_4: 681727535
-      cube_and_grounds_8: -528624617
       cube_2: 1272427539
       path_13: 898015712
+      Fence_Round: -215813494
       pave_4: -429008719
-      cube_and_grounds_0: 2035050480
+      Enemy_3: 768777580
+      Mud_Left_Down: -2064919525
       pave_5: -814591162
-      cube_: 2035050480
-      cube_and_grounds_18: -367212381
-      cube_and_grounds_13: -729772798
-      cube_and_grounds_19: -1946786275
+      Fence_Round_Right&Up: -367212381
+      Mud_Right_Up: -641867480
+      Pave_Horizontal: -1062883822
+      Area_Bottom: -1935503498
       pave_1: 2134269319
+      Pave_Right_Up: 2008135622
       path_6: 1515240863
-      pave_: -1062883822
       cube_5: 1472165509
-      cube_and_grounds_42: 583051598
-      cube_and_grounds_37: 772907429
-      cube_and_grounds_31: 1615131821
-      cube_and_grounds_9: -1196127753
+      Area: 545281615
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
