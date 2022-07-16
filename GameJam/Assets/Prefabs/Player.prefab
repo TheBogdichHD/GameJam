@@ -4904,7 +4904,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831830913
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: -5
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5262,7 +5262,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1831830913
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1934050130, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5296,10 +5296,10 @@ MonoBehaviour:
   - {fileID: -316866886, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
   - {fileID: 2134269319, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
   edges:
-  - {fileID: 2165005635490061621}
-  - {fileID: 2165005637062395703}
   - {fileID: 2165005635669532300}
   - {fileID: 2165005635889235781}
+  - {fileID: 2165005635490061621}
+  - {fileID: 2165005637062395703}
 --- !u!61 &2165005636685309282
 BoxCollider2D:
   m_ObjectHideFlags: 0
