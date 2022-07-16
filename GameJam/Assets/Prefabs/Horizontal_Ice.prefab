@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5421709514104642891}
   - component: {fileID: 9149020425512900889}
   m_Layer: 0
-  m_Name: VerticalIce
+  m_Name: Horizontal_Ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
