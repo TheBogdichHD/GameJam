@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     public Sprite[] cube; // 0  1  2  3
     //                          4
     private int[] cubeInt;
-    private int currentInt;
+    public int currentInt;
 
     public SpriteRenderer[] edges;
 
