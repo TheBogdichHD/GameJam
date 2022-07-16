@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     protected BoxCollider2D boxCollider;
-    protected RaycastHit2D hit;
+    private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     private float movementDistance = 0.02f;
     private float maxDistance = 0.32f;
@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rigidbody = GetComponent<Rigidbody2D>();
         currentDistance = 0;
         goLeft = false;
         goRight = false;
