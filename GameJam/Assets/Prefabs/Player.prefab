@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8122b657320907b40996d2be3801e006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: {x: -0.28, y: 0, z: 0}
 --- !u!61 &2165005635490061623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5057,6 +5058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8122b657320907b40996d2be3801e006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: {x: 0.28, y: 0, z: 0}
 --- !u!61 &2165005635669532303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5203,6 +5205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8122b657320907b40996d2be3801e006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: {x: 0, y: -0.28, z: 0}
 --- !u!61 &2165005635889235800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5359,6 +5362,7 @@ MonoBehaviour:
   goUp: 0
   goDown: 0
   isSliding: 0
+  isDirty: 0
   dust: {fileID: 2165005635528155156}
   cube:
   - {fileID: 1272427539, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
@@ -5519,6 +5523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8122b657320907b40996d2be3801e006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0.28, z: 0}
 --- !u!61 &2165005637062395722
 BoxCollider2D:
   m_ObjectHideFlags: 0
