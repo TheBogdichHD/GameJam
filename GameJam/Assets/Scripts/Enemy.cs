@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
         if (isDying)
         {
             deltaTime += Time.deltaTime;
-            if (deltaTime > 1.9f)
+            if (deltaTime > 1.7f)
             {
                 Destroy(gameObject);
             }           
