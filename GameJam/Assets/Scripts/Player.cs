@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     protected BoxCollider2D boxCollider;
-    private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     private float movementDistance = 0.02f;
     private float maxDistance = 0.32f;
@@ -16,12 +15,15 @@ public class Player : MonoBehaviour
     public bool goDown;
     public bool isSliding;
     public bool isDirty;
+    public bool isCollided;
+    private (float x, float y) lastCoord;
 
     public ParticleSystem dust;
     //                          5
     public Sprite[] cube; // 0  1  2  3
     //                          4
     private int[] cubeInt;
+    [SerializeField]
     public int currentInt;
 
     public SpriteRenderer[] edges;
@@ -30,7 +32,6 @@ public class Player : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rigidbody = GetComponent<Rigidbody2D>();
         currentDistance = 0;
         goLeft = false;
         goRight = false;
@@ -40,6 +41,8 @@ public class Player : MonoBehaviour
         cubeInt = new int[] { 2, 1, 5, 6, 4, 3 };
         currentInt = 1;
         isSliding = false;
+        isCollided = false;
+        lastCoord = (transform.position.x, transform.position.y);
         SetEdges();
     }
     
@@ -49,7 +52,7 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[2];
             goLeft = true;
-            if (!isDirty)
+            if (!isDirty && !isCollided)
             {
                 currentDistance += movementDistance;
                 transform.position += new Vector3(-movementDistance, 0, 0);
@@ -62,7 +65,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && !isCollided)
                 {
                     goLeft = false;
                     cubeInt = new int[] { cubeInt[1], cubeInt[2], cubeInt[3], cubeInt[0], cubeInt[4], cubeInt[5] };
@@ -70,7 +74,7 @@ public class Player : MonoBehaviour
                     cube = new Sprite[] { cube[1], cube[2], cube[3], cube[0], cube[4], cube[5] };
                     SetEdges();
                 }
-                if (isDirty)
+                if (isDirty && !isCollided)
                 {
                     cubeInt = new int[] { cubeInt[1], cubeInt[2], cubeInt[3], cubeInt[0], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[2];
@@ -86,7 +90,7 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[0];
             goRight = true;
-            if (!isDirty)
+            if (!isDirty && !isCollided)
             {
                 currentDistance += movementDistance;
                 transform.position += new Vector3(movementDistance, 0, 0);
@@ -99,7 +103,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goRight && !isCollided)
                 {
                     goRight = false;
                     cubeInt = new int[] { cubeInt[3], cubeInt[0], cubeInt[1], cubeInt[2], cubeInt[4], cubeInt[5] };
@@ -107,7 +112,7 @@ public class Player : MonoBehaviour
                     cube = new Sprite[] { cube[3], cube[0], cube[1], cube[2], cube[4], cube[5] };
                     SetEdges();
                 }
-                if (isDirty)
+                if (isDirty && !isCollided)
                 {
                     cubeInt = new int[] { cubeInt[3], cubeInt[0], cubeInt[1], cubeInt[2], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[0];
@@ -123,7 +128,7 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[4];
             goUp = true;
-            if (!isDirty)
+            if (!isDirty && !isCollided)
             {
                 currentDistance += movementDistance;
                 transform.position += new Vector3(0, movementDistance, 0);
@@ -136,7 +141,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goUp && !isCollided)
                 {
                     goUp = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[4], cubeInt[2], cubeInt[5], cubeInt[3], cubeInt[1] };
@@ -144,7 +150,7 @@ public class Player : MonoBehaviour
                     cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
                     SetEdges();
                 }
-                if (isDirty)
+                if (isDirty && !isCollided)
                 {
                     cubeInt = new int[] { cubeInt[0], cubeInt[4], cubeInt[2], cubeInt[5], cubeInt[3], cubeInt[1] };
                     spriteRenderer.sprite = cube[4];
@@ -160,7 +166,7 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[5];
             goDown = true;
-            if (!isDirty)
+            if (!isDirty && !isCollided)
             {
                 currentDistance += movementDistance;
                 transform.position += new Vector3(0, -movementDistance, 0);
@@ -173,7 +179,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goDown && !isCollided)
                 {
                     goDown = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
@@ -181,7 +188,7 @@ public class Player : MonoBehaviour
                     cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
                     SetEdges();
                 }
-                if (isDirty)
+                if (isDirty && !isCollided)
                 {
                     currentInt = cubeInt[5];
                     cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
@@ -211,5 +218,24 @@ public class Player : MonoBehaviour
     void CreateDust()
     {       
         dust.Play();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Fence")
+        {
+            isCollided = true;
+        }
+        transform.position = new Vector3(lastCoord.x, lastCoord.y, 0);
+        currentDistance = 0;
+        currentInt = cubeInt[1];
+        goLeft = false;
+        goRight = false;
+        goUp = false;
+        goDown = false;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isCollided = false;
     }
 }
