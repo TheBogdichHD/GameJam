@@ -17,6 +17,16 @@ public class Player : MonoBehaviour
     private bool dustPlay;
 
     public ParticleSystem dust;
+<<<<<<< Updated upstream
+=======
+    //                          5
+    public Sprite[] cube; // 0  1  2  3
+    //                          4
+    private int[] cubeInt;
+    public int currentInt;
+
+    public SpriteRenderer[] edges;
+>>>>>>> Stashed changes
 
     protected void Start()
     {
