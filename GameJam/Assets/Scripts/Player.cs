@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     protected BoxCollider2D boxCollider;
-    private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     private float movementDistance = 0.02f;
     private float maxDistance = 0.32f;
@@ -16,12 +15,14 @@ public class Player : MonoBehaviour
     public bool goDown;
     public bool isSliding;
     public bool isDirty;
+    private (float x, float y) lastCoord;
 
     public ParticleSystem dust;
     //                          5
     public Sprite[] cube; // 0  1  2  3
     //                          4
     private int[] cubeInt;
+    [SerializeField]
     public int currentInt;
 
     public SpriteRenderer[] edges;
@@ -30,7 +31,6 @@ public class Player : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rigidbody = GetComponent<Rigidbody2D>();
         currentDistance = 0;
         goLeft = false;
         goRight = false;
@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
         cubeInt = new int[] { 2, 1, 5, 6, 4, 3 };
         currentInt = 1;
         isSliding = false;
+        lastCoord = (transform.position.x, transform.position.y);
         SetEdges();
     }
     
@@ -62,6 +63,7 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
+                lastCoord = (transform.position.x, transform.position.y);
                 if (!isSliding)
                 {
                     goLeft = false;
@@ -99,7 +101,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goRight)
                 {
                     goRight = false;
                     cubeInt = new int[] { cubeInt[3], cubeInt[0], cubeInt[1], cubeInt[2], cubeInt[4], cubeInt[5] };
@@ -136,7 +139,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goUp)
                 {
                     goUp = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[4], cubeInt[2], cubeInt[5], cubeInt[3], cubeInt[1] };
@@ -173,7 +177,8 @@ public class Player : MonoBehaviour
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
-                if (!isSliding)
+                lastCoord = (transform.position.x, transform.position.y);
+                if (!isSliding && goDown)
                 {
                     goDown = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
@@ -211,5 +216,16 @@ public class Player : MonoBehaviour
     void CreateDust()
     {       
         dust.Play();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        transform.position = new Vector3(lastCoord.x, lastCoord.y, 0);
+        currentDistance = 0;
+        currentInt = cubeInt[1];
+        goLeft = false;
+        goRight = false;
+        goUp = false;
+        goDown = false;
     }
 }
