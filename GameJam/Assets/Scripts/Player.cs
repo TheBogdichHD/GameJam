@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     private bool goRight;
     private bool goUp;
     private bool goDown;
+    private bool dustPlay;
+
+    public ParticleSystem dust;
 
     protected void Start()
     {
@@ -24,6 +27,7 @@ public class Player : MonoBehaviour
         goRight = false;
         goUp = false;
         goDown = false;
+        dustPlay = false;
     }
     
     private void FixedUpdate()
@@ -76,5 +80,14 @@ public class Player : MonoBehaviour
             }
         }
         //transform.position += new Vector3(-movementDistance, 0, 0);
+        if (goDown || goLeft || goRight || goUp)
+        {
+            CreateDust();           
+        }
+    }
+
+    void CreateDust()
+    {       
+        dust.Play();
     }
 }
