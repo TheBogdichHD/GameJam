@@ -9,9 +9,11 @@ public class Enemy : MonoBehaviour
     public ParticleSystem deathEffect;
     private bool isDying;
     private float deltaTime;
+    public int playerInt;
 
     private void Start()
     {
+        playerInt = -1;
         anim = GetComponent<Animator>();
         isDying = false;
         deltaTime = 0;
@@ -29,18 +31,31 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player" && coll.gameObject.GetComponent<Player>().currentInt != playerInt)
         {
-            if (coll.gameObject.GetComponent<Player>().currentInt >= cubeInt)
+            if (playerInt == -1)
             {
-                deathEffect.Play();
-                anim.SetBool("isDeath", true);
-                isDying = true;
+                playerInt = coll.gameObject.GetComponent<Player>().currentInt;
             }
             else
             {
+                if (coll.gameObject.GetComponent<Player>().currentInt >= cubeInt)
+                {
+                    deathEffect.Play();
+                    anim.SetBool("isDeath", true);
+                    isDying = true;
+                }
+                else
+                {
 
+                }
             }
+           
         }
+
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        playerInt = -1;
     }
 }
