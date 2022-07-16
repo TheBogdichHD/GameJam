@@ -5288,6 +5288,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47bb26af042442478e2e30dc1be8496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goLeft: 0
+  goRight: 0
+  goUp: 0
+  goDown: 0
   dust: {fileID: 2165005635528155156}
   cube:
   - {fileID: 1272427539, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
@@ -5465,7 +5469,7 @@ GameObject:
   - component: {fileID: 1467038886934322057}
   m_Layer: 0
   m_Name: rb
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,11 +12,11 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerStay2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (coll.gameObject.GetComponent<Player>().currentInt >= cubeInt)
+            if (coll.gameObject.GetComponentInParent<Player>().currentInt >= cubeInt)
             {
                 anim.SetBool("isDeath", true);
             }
