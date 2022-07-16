@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_1
+      name: Enemy_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1061,7 +1061,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_27
+      name: Enemy_2
       rect:
         serializedVersion: 2
         x: 32
@@ -1082,7 +1082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_28
+      name: Enemy_3
       rect:
         serializedVersion: 2
         x: 64
@@ -1103,7 +1103,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_29
+      name: Enemy_4
       rect:
         serializedVersion: 2
         x: 96
@@ -1124,7 +1124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_30
+      name: Enemy_5
       rect:
         serializedVersion: 2
         x: 128
@@ -1145,7 +1145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cube_and_grounds_31
+      name: Enemy_6
       rect:
         serializedVersion: 2
         x: 160
@@ -1411,6 +1411,7 @@ TextureImporter:
       Fence_Vertical: 1073279899
       Dice_3: 2035050480
       mud_3: 1552760836
+      Enemy_6: 1615131821
       Mud_Left_Up: 838485847
       Fence_Round_Left&Down: -1640676066
       path_3: -1341293588
@@ -1418,23 +1419,23 @@ TextureImporter:
       evil_cube_3: -820312771
       fence_9: -1941466957
       Pave_Vertical: -1196127753
-      cube_and_grounds_30: -1763390529
       Pave_Left_Down: -2045614716
       Dice_4: 1157403554
       icey_pave_1: 1402774135
       path_2: 922895035
       Area_Round_Left: -1765918735
       Dice_1: -70242328
-      enemy_1: 556918822
       pave_0: 1628754583
       fence_6: -123565808
       Area_Left_Exit: -1475321440
       evil_cube_1: -15948843
       Fence_Horizontal: 1938462299
       fence_8: -206316193
+      Enemy_4: -924398572
       Fence_Round_Left: 895408574
       Area_Round_Up: -1923780293
       path_5: -1905104882
+      Enemy_2: -1332795381
       evil_cube_5: -660993591
       cube_and_grounds_34: 992565537
       Mud_Right_Down: 583051598
@@ -1443,6 +1444,8 @@ TextureImporter:
       evil_cube_2: 767184579
       fence_2: 45268218
       Dice_5: 22025154
+      Enemy_1: 556918822
+      Enemy_5: -1763390529
       mud_1: -1646461127
       cube_6: -1727351114
       path_11: -958023450
@@ -1467,16 +1470,13 @@ TextureImporter:
       Dice_6: -1381811912
       path_4: -1005033415
       pave_3: -1662108920
-      cube_and_grounds_29: -924398572
+      Fence_Round_Lef&Down: -1298604330
       Ice_Vertical: 1832837669
-      cube_and_grounds_27: -1332795381
       Pave_Left_Up: -1781622133
       path_1: 1207338379
-      Fence_Round_Lef&Down: -1298604330
       Fence_Round_Down: 1776982866
       Ice_Horizontal: -729772798
       path_12: -698279594
-      cube_and_grounds_28: 768777580
       Fence_Round_Left&Up: -1946786275
       Fence_Round_Up: 385948529
       Fence_Round_Right: -1623799010
@@ -1489,6 +1489,7 @@ TextureImporter:
       path_13: 898015712
       Fence_Round: -215813494
       pave_4: -429008719
+      Enemy_3: 768777580
       Mud_Left_Down: -2064919525
       pave_5: -814591162
       Fence_Round_Right&Up: -367212381
@@ -1499,7 +1500,6 @@ TextureImporter:
       Pave_Right_Up: 2008135622
       path_6: 1515240863
       cube_5: 1472165509
-      cube_and_grounds_31: 1615131821
       Area: 545281615
   spritePackingTag: 
   pSDRemoveMatte: 0
