@@ -5298,10 +5298,10 @@ MonoBehaviour:
   - {fileID: 2134269319, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
   currentInt: 0
   edges:
-  - {fileID: 2165005635490061621}
-  - {fileID: 2165005637062395703}
   - {fileID: 2165005635669532300}
   - {fileID: 2165005635889235781}
+  - {fileID: 2165005635490061621}
+  - {fileID: 2165005637062395703}
 --- !u!61 &2165005636685309282
 BoxCollider2D:
   m_ObjectHideFlags: 0
