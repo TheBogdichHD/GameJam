@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (coll.gameObject.GetComponentInParent<Player>().currentInt >= cubeInt)
+            if (coll.gameObject.GetComponent<Player>().currentInt >= cubeInt)
             {
                 anim.SetBool("isDeath", true);
             }
