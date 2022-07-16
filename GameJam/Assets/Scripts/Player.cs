@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
     {
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || goLeft) && !goDown && !goRight && !goUp)
         {
-            currentInt = cubeInt[2];
+            
             goLeft = true;
             if (!isDirty && !isCollided)
             {
@@ -66,8 +66,9 @@ public class Player : MonoBehaviour
             {
                 currentDistance = 0;
                 lastCoord = (transform.position.x, transform.position.y);
-                if (!isSliding && !isCollided)
+                if (!isSliding && goLeft && !isCollided)
                 {
+                    currentInt = cubeInt[2];
                     goLeft = false;
                     cubeInt = new int[] { cubeInt[1], cubeInt[2], cubeInt[3], cubeInt[0], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[2];
@@ -88,7 +89,7 @@ public class Player : MonoBehaviour
 
         else if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || goRight) && !goDown && !goLeft && !goUp)
         {
-            currentInt = cubeInt[0];
+            
             goRight = true;
             if (!isDirty && !isCollided)
             {
@@ -106,6 +107,7 @@ public class Player : MonoBehaviour
                 lastCoord = (transform.position.x, transform.position.y);
                 if (!isSliding && goRight && !isCollided)
                 {
+                    currentInt = cubeInt[0];
                     goRight = false;
                     cubeInt = new int[] { cubeInt[3], cubeInt[0], cubeInt[1], cubeInt[2], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[0];
@@ -126,7 +128,7 @@ public class Player : MonoBehaviour
 
         else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || goUp) && !goDown && !goRight && !goLeft)
         {
-            currentInt = cubeInt[4];
+            
             goUp = true;
             if (!isDirty && !isCollided)
             {
@@ -144,6 +146,7 @@ public class Player : MonoBehaviour
                 lastCoord = (transform.position.x, transform.position.y);
                 if (!isSliding && goUp && !isCollided)
                 {
+                    currentInt = cubeInt[4];
                     goUp = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[4], cubeInt[2], cubeInt[5], cubeInt[3], cubeInt[1] };
                     spriteRenderer.sprite = cube[4];
@@ -164,7 +167,7 @@ public class Player : MonoBehaviour
 
         else if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || goDown) && !goLeft && !goRight && !goUp)
         {
-            currentInt = cubeInt[5];
+            
             goDown = true;
             if (!isDirty && !isCollided)
             {
@@ -182,6 +185,7 @@ public class Player : MonoBehaviour
                 lastCoord = (transform.position.x, transform.position.y);
                 if (!isSliding && goDown && !isCollided)
                 {
+                    currentInt = cubeInt[5];
                     goDown = false;
                     cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
                     spriteRenderer.sprite = cube[5];
