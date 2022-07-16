@@ -5363,6 +5363,7 @@ MonoBehaviour:
   goDown: 0
   isSliding: 0
   isDirty: 0
+  isCollided: 0
   dust: {fileID: 2165005635528155156}
   cube:
   - {fileID: 1272427539, guid: 6564bebf2a5ae2e4c97e20e43be90266, type: 3}
@@ -5401,7 +5402,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.28, y: 0.28}
   m_EdgeRadius: 0
 --- !u!50 &4539148606149314825
 Rigidbody2D:
