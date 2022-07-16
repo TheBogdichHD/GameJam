@@ -7,6 +7,7 @@ public class Edge : MonoBehaviour
     private SpriteRenderer sr;
     private bool isTouched;
     private Player pl;
+    public Vector3 offset;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class Edge : MonoBehaviour
 
     void Update()
     {
+        transform.position = pl.transform.position + offset;
         if (isTouched && !(pl.goUp || pl.goDown || pl.goLeft || pl.goRight))
         {
             if (sr.color.a < 0.7)
