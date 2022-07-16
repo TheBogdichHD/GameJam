@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public bool goUp;
     public bool goDown;
     public bool isSliding;
+    public bool isDirty;
 
     public ParticleSystem dust;
     //                          5
@@ -67,8 +68,16 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[0];
             goRight = true;
-            currentDistance += movementDistance;
-            transform.position += new Vector3(movementDistance, 0, 0);
+            if (!isDirty)
+            {
+                currentDistance += movementDistance;
+                transform.position += new Vector3(movementDistance, 0, 0);
+            }
+            else
+            {
+                currentDistance += 0.007f;
+                transform.position += new Vector3(0.007f, 0, 0);
+            }
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
@@ -87,8 +96,16 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[4];
             goUp = true;
-            currentDistance += movementDistance;
-            transform.position += new Vector3(0, movementDistance, 0);
+            if (!isDirty)
+            {
+                currentDistance += movementDistance;
+                transform.position += new Vector3(0, movementDistance, 0);
+            }
+            else
+            {
+                currentDistance += 0.007f;
+                transform.position += new Vector3(0, 0.007f, 0);
+            }
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
@@ -100,6 +117,16 @@ public class Player : MonoBehaviour
                     cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
                     SetEdges();
                 }
+                if (isDirty)
+                {
+                    goUp = false;
+                    cubeInt = new int[] { cubeInt[0], cubeInt[4], cubeInt[2], cubeInt[5], cubeInt[3], cubeInt[1] };
+                    spriteRenderer.sprite = cube[4];
+                    cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
+                    SetEdges();
+                    goUp = true;
+                    isDirty = false;
+                }
             }
         }
 
@@ -107,8 +134,16 @@ public class Player : MonoBehaviour
         {
             currentInt = cubeInt[5];
             goDown = true;
-            currentDistance += movementDistance;
-            transform.position += new Vector3(0, -movementDistance, 0);
+            if (!isDirty)
+            {
+                currentDistance += movementDistance;
+                transform.position += new Vector3(0, -movementDistance, 0);
+            }
+            else
+            {
+                currentDistance += 0.007f;
+                transform.position += new Vector3(0, -0.007f, 0);
+            }
             if (currentDistance >= maxDistance)
             {
                 currentDistance = 0;
@@ -118,6 +153,16 @@ public class Player : MonoBehaviour
                     cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
                     spriteRenderer.sprite = cube[5];
                     cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
+                    SetEdges();
+                }
+                if (isDirty)
+                {
+                    currentInt = cubeInt[5];
+                    cubeInt = new int[] { cubeInt[0], cubeInt[5], cubeInt[2], cubeInt[4], cubeInt[1], cubeInt[3] };
+                    spriteRenderer.sprite = cube[5];
+                    cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
+                    goDown = true;
+                    isDirty = false;
                     SetEdges();
                 }
             }
