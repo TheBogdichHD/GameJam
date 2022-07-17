@@ -16,7 +16,7 @@ public class MainCamera : MonoBehaviour
         one = 1;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (currentDistance >= maxDistance)
         {
@@ -38,5 +38,14 @@ public class MainCamera : MonoBehaviour
 
         currentDistance += 0.0001f;
         transform.position += new Vector3(0, one * 0.00011f, 0);
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            Counter.instance.LoadSameLevel();
+        }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            Counter.instance.LoadNextLevel();
+        }
     }
 }

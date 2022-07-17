@@ -18,17 +18,16 @@ public class Counter : MonoBehaviour
         count--;
         if (count == 0)
         {
+            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.sceneLoad);
             LoadNextLevel();
         }
     }
     public void LoadNextLevel()
-    {
-        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.sceneLoad);
+    {       
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
     public void LoadSameLevel()
-    {
-        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.death);
+    {      
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
     }
     IEnumerator LoadLevel(int levelIndex)
