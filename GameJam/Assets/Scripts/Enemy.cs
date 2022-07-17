@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public int cubeInt;
     public ParticleSystem deathEffect;
     private bool isDying;
+    private bool flag;
     private float deltaTime;
     public int playerInt;
     public Counter counter;
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         isDying = false;
         deltaTime = 0;
+        flag = false;
     }
     private void Update()
     {
@@ -47,14 +49,14 @@ public class Enemy : MonoBehaviour
                     SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.enemyFought);
                     deathEffect.Play();
                     anim.SetBool("isDeath", true);
-                    isDying = true;                
+                    isDying = true;
                 }
                 else
                 {
-                    if (!isDying)
+                    if (!flag)
                     {
+                        flag = true;
                         Counter.instance.LoadSameLevel();
-                        isDying = true;
                     }
                 }
             }
