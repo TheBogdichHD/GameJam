@@ -54,6 +54,7 @@ public class Enemy : MonoBehaviour
                 {
                     if (!flag)
                     {
+                        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.death);
                         Counter.instance.LoadSameLevel();
                         flag = true;
                     }
