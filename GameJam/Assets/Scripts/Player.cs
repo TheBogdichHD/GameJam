@@ -230,7 +230,7 @@ public class Player : MonoBehaviour
     }
     void MudSound()
     {
-        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.mud);
+        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.mud, 0.5f);
     }
     void SetEdges()
     {
