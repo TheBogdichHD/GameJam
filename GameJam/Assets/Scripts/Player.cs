@@ -224,9 +224,9 @@ public class Player : MonoBehaviour
     void MoveSound()
     {
         if (currentInt % 2 == 0)
-            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_1);
+            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_1, 0.3f);
         else
-            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_2);
+            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_2, 0.6f);
     }
     void MudSound()
     {
