@@ -1552,7 +1552,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: cubeInt
       value: 1
@@ -1731,7 +1731,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 5440877608488310715, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: m_Name
       value: Enemy 4
@@ -2108,7 +2108,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: cubeInt
       value: 5
@@ -17202,7 +17202,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: cubeInt
       value: 3
@@ -17271,7 +17271,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: cubeInt
       value: 6
@@ -17543,7 +17543,7 @@ PrefabInstance:
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: counter
       value: 
-      objectReference: {fileID: 912179900}
+      objectReference: {fileID: 0}
     - target: {fileID: 1509215115250223662, guid: 8f7eeaac6354af140864b4fffe96f504, type: 3}
       propertyPath: cubeInt
       value: 2
