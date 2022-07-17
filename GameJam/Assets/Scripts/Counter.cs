@@ -8,7 +8,6 @@ public class Counter : MonoBehaviour
     public int count;
     public static Counter instance;
     public Animator transition;
-
     public float transitionTime = 1f;
     private void Awake()
     {

@@ -51,7 +51,11 @@ public class Enemy : MonoBehaviour
                 }
                 else
                 {
-                    Counter.instance.LoadSameLevel();
+                    if (!isDying)
+                    {
+                        Counter.instance.LoadSameLevel();
+                        isDying = true;
+                    }
                 }
             }
            
