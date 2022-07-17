@@ -2214,11 +2214,11 @@ MonoBehaviour:
   Audio: {fileID: 1416425237}
   move_1: {fileID: 8300000, guid: ba6ea62b0ec112641a8581419f25b41c, type: 3}
   move_2: {fileID: 8300000, guid: e5424d12bd8312b4c805db9b178e4dfd, type: 3}
-  enemyFought: {fileID: 0}
-  death: {fileID: 8300000, guid: 1d6dac2a9f07c03478b1809efac8be91, type: 3}
-  fenceDown: {fileID: 0}
-  mud: {fileID: 0}
-  sceneLoad: {fileID: 8300000, guid: d8b46f8e2b20ae245a1f8e45f679cf82, type: 3}
+  enemyFought: {fileID: 8300000, guid: 4431463264151ef4e88c637484700758, type: 3}
+  death: {fileID: 8300000, guid: 73dad0069dd9ac348bb9c60fd71a7cc4, type: 3}
+  fenceDown: {fileID: 8300000, guid: baf5f77c1ab97fe4395c52c4b30d58e7, type: 3}
+  mud: {fileID: 8300000, guid: b5ee638a7b924ff4e902b644342c1e0f, type: 3}
+  sceneLoad: {fileID: 8300000, guid: 6895f1116f7d8844fa21ab97d4b20035, type: 3}
 --- !u!82 &1416425237
 AudioSource:
   m_ObjectHideFlags: 0
