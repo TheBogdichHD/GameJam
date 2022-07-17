@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private bool isDying;
     private float deltaTime;
     public int playerInt;
+    public Counter counter;
 
     private void Start()
     {
@@ -25,8 +26,10 @@ public class Enemy : MonoBehaviour
             deltaTime += Time.deltaTime;
             if (deltaTime > 1.7f)
             {
-                Destroy(gameObject);
-            }           
+                Counter.instance.Countdown();
+                Destroy(gameObject);               
+            }
+            
         }
     }
     private void OnTriggerStay2D(Collider2D coll)
