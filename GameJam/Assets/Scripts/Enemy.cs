@@ -44,13 +44,14 @@ public class Enemy : MonoBehaviour
             {
                 if (coll.gameObject.GetComponent<Player>().currentInt >= cubeInt)
                 {
+                    SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.enemyFought);
                     deathEffect.Play();
                     anim.SetBool("isDeath", true);
-                    isDying = true;
+                    isDying = true;                
                 }
                 else
                 {
-
+                    Counter.instance.LoadSameLevel();
                 }
             }
            

@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goLeft = true;
                     isDirty = false;
-                    MoveSound();
+                    MudSound();
                 }
             }
         }
@@ -127,7 +127,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goRight = true;
                     isDirty = false;
-                    MoveSound();
+                    MudSound();
                 }
             }
         }
@@ -168,7 +168,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goUp = true;
                     isDirty = false;
-                    MoveSound();
+                    MudSound();
                 }
             }
         }
@@ -210,7 +210,7 @@ public class Player : MonoBehaviour
                     goDown = true;
                     isDirty = false;
                     SetEdges();
-                    MoveSound();
+                    MudSound();
                 }
             }
         }
@@ -227,6 +227,10 @@ public class Player : MonoBehaviour
             SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_1);
         else
             SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_2);
+    }
+    void MudSound()
+    {
+        SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.mud);
     }
     void SetEdges()
     {
