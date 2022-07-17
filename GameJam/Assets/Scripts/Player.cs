@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public bool isSliding;
     public bool isDirty;
     public bool isCollided;
+
+
     private (float x, float y) lastCoord;
     public ParticleSystem dust;
     //                          5
@@ -72,6 +74,8 @@ public class Player : MonoBehaviour
                     cubeInt = new int[] { cubeInt[1], cubeInt[2], cubeInt[3], cubeInt[0], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[2];
                     cube = new Sprite[] { cube[1], cube[2], cube[3], cube[0], cube[4], cube[5] };
+                    MoveSound();
+                    
                     SetEdges();
                 }
                 if (isDirty && !isCollided)
@@ -82,6 +86,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goLeft = true;
                     isDirty = false;
+                    MoveSound();
                 }
             }
         }
@@ -111,6 +116,7 @@ public class Player : MonoBehaviour
                     cubeInt = new int[] { cubeInt[3], cubeInt[0], cubeInt[1], cubeInt[2], cubeInt[4], cubeInt[5] };
                     spriteRenderer.sprite = cube[0];
                     cube = new Sprite[] { cube[3], cube[0], cube[1], cube[2], cube[4], cube[5] };
+                    MoveSound();
                     SetEdges();
                 }
                 if (isDirty && !isCollided)
@@ -121,6 +127,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goRight = true;
                     isDirty = false;
+                    MoveSound();
                 }
             }
         }
@@ -151,6 +158,7 @@ public class Player : MonoBehaviour
                     spriteRenderer.sprite = cube[4];
                     cube = new Sprite[] { cube[0], cube[4], cube[2], cube[5], cube[3], cube[1] };
                     SetEdges();
+                    MoveSound();
                 }
                 if (isDirty && !isCollided)
                 {
@@ -160,6 +168,7 @@ public class Player : MonoBehaviour
                     SetEdges();
                     goUp = true;
                     isDirty = false;
+                    MoveSound();
                 }
             }
         }
@@ -190,6 +199,7 @@ public class Player : MonoBehaviour
                     spriteRenderer.sprite = cube[5];
                     cube = new Sprite[] { cube[0], cube[5], cube[2], cube[4], cube[1], cube[3] };
                     SetEdges();
+                    MoveSound();
                 }
                 if (isDirty && !isCollided)
                 {
@@ -200,6 +210,7 @@ public class Player : MonoBehaviour
                     goDown = true;
                     isDirty = false;
                     SetEdges();
+                    MoveSound();
                 }
             }
         }
@@ -210,6 +221,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    void MoveSound()
+    {
+        if (currentInt % 2 == 0)
+            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_1);
+        else
+            SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.move_2);
+    }
     void SetEdges()
     {
         edges[0].sprite = cube[0];
