@@ -11,13 +11,14 @@ public class Enemy : MonoBehaviour
     private float deltaTime;
     public int playerInt;
     public Counter counter;
-
+    private bool flag;
     private void Start()
     {
         playerInt = -1;
         anim = GetComponent<Animator>();
         isDying = false;
         deltaTime = 0;
+        flag = false;
     }
     private void Update()
     {
@@ -47,11 +48,15 @@ public class Enemy : MonoBehaviour
                     SfxManager.instance.Audio.PlayOneShot(SfxManager.instance.enemyFought);
                     deathEffect.Play();
                     anim.SetBool("isDeath", true);
-                    isDying = true;                
+                    isDying = true;                  
                 }
                 else
                 {
-                    Counter.instance.LoadSameLevel();
+                    if (!flag)
+                    {
+                        Counter.instance.LoadSameLevel();
+                        flag = true;
+                    }
                 }
             }
            
