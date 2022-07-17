@@ -39,6 +39,11 @@ public class MainCamera : MonoBehaviour
         currentDistance += 0.0001f;
         transform.position += new Vector3(0, one * 0.00011f, 0);
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if (Input.GetKey(KeyCode.R))
         {
             Counter.instance.LoadSameLevel();
