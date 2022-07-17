@@ -6,7 +6,7 @@ public class Button : MonoBehaviour
 {
     private SpriteRenderer sr;
     public Sprite btn;
-    public GameObject door;
+    public GameObject[] doors;
     private bool isOpen;
     private float DTime;
 
@@ -22,7 +22,8 @@ public class Button : MonoBehaviour
         {
             DTime += Time.deltaTime;
             if (DTime >= 1)
-                Destroy(door.GetComponent<BoxCollider2D>());
+                foreach (GameObject door in doors)
+                    Destroy(door.GetComponent<BoxCollider2D>());
         }
     }
 
@@ -31,7 +32,8 @@ public class Button : MonoBehaviour
         if (coll.gameObject.tag == "Player")
         {
             sr.sprite = btn;
-            door.GetComponent<Animator>().SetBool("Btn", true);
+            foreach (GameObject door in doors)
+                door.GetComponent<Animator>().SetBool("Btn", true);
             isOpen = true;
         }
     }
