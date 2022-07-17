@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     public bool isDirty;
     public bool isCollided;
     private (float x, float y) lastCoord;
-
     public ParticleSystem dust;
     //                          5
     public Sprite[] cube; // 0  1  2  3
